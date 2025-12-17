@@ -1,9 +1,10 @@
 "use client"
 
 import { useGetFeaturedProduts } from "@/api/useGetFeaturedProduts"
+import { ResponseType } from "@/types/response"
 
 const FeatureProducts = () => {
-    const { loading, result } = useGetFeaturedProduts()
+    const { loading, result }: ResponseType = useGetFeaturedProduts()
     console.log(result)
     return (
         <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24">
